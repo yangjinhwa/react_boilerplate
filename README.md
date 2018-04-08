@@ -1,0 +1,6 @@
+## Preparation
+
+```
+npm init
+
+```
