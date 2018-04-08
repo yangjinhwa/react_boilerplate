@@ -9,6 +9,17 @@ module.exports = {
   path: path.resolve(__dirname, 'build'),
     filename: 'bundle2.js'
 },
+  module: {
+    rules: [
+      {test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]
+  },
   devServer: {
     contentBase: path.join(__dirname, "build"),
     compress: true,

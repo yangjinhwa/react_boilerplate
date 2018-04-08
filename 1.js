@@ -1,4 +1,5 @@
 const fnc2 = require('./2.js');
+require('./style.scss');
 
 console.log(1);
 
