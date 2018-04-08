@@ -4,7 +4,8 @@
   "description": "``` npm init",
   "main": "1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/yangjinhwa/react_boilerplate/issues"
   },
-  "homepage": "https://github.com/yangjinhwa/react_boilerplate#readme"
+  "homepage": "https://github.com/yangjinhwa/react_boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
 }

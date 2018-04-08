@@ -2,5 +2,8 @@
 
 ```
 npm init
+yarn add webpack --dev
+yarn add -D webpack-cli
+yarn start
 
 ```
