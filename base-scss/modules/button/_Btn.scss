@@ -1,0 +1,145 @@
+.Btn {
+  color: $global-text-color;
+  display: inline-block;
+  font-size: $global-font-size;
+  font-weight: 500;
+  margin: 0 4px;
+  text-align: center;
+  transition: 0.2s background-color;
+}
+
+.Btn--gray {
+  background-color: $color-gray200;
+  color: $color-gray700;
+
+  &:hover {
+    background-color: $color-gray300;
+  }
+
+  &:active {
+    background-color: $color-gray200;
+  }
+}
+
+.Btn--white {
+  background-color: $color-white;
+  border: 1px solid $color-gray500;
+  color: $color-warm-gray800;
+
+  &:hover {
+    background-color: $color-cool-gray50;
+    border: 1px solid $color-gray400;
+    color: $color-gray600;
+  }
+
+  &:active {
+    background-color: $color-cool-gray200;
+  }
+}
+
+.Btn--ghost {
+  background-color: $color-white-opacity0;
+  border: 1px solid $global-base-color;
+  color: $global-text-color;
+
+  &:hover {
+    background-color: $color-black-opacity05;
+    border: 1px solid $global-base-color;
+    color: $global-text-color;
+  }
+
+  &:active {
+    background-color: $color-black-opacity05;
+    border: 1px solid $global-base-color;
+    color: $global-text-color;
+  }
+}
+
+.Btn--white-ghost {
+  background-color: $color-white-opacity0;
+  border: 1px solid $color-white;
+  color: $color-white;
+
+  //&:hover {
+  //  background-color: $color-white-opacity20;
+  //  border: 1px solid $color-white;
+  //  color: $color-white;
+  //}
+
+  &:active {
+    background-color: $color-white-opacity20;
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+}
+
+.Btn--primary {
+  background-color: $global-primary-color;
+  border: 1px solid $global-primary-color;
+  color: $color-warm-gray800;
+
+  &:hover {
+    background-color: darken($global-primary-color, 7%);
+    border: 1px solid darken($global-primary-color, 7%);
+  }
+
+  &:active {
+    background-color: darken($global-primary-color, 12%);
+    border: 1px solid darken($global-primary-color, 12%);
+  }
+}
+
+.Btn--indigo {
+  background-color: $color-gray-blue;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-dark-gray-blue;
+  }
+
+  &:active {
+    background-color: darken($global-primary-color, 12%);
+  }
+}
+
+
+.Btn--lg {
+  max-width: 35 * $unit;
+  padding: 18px $unit 20px;
+  width: 100%;
+}
+
+.Btn--md {
+  max-width: 27 * $unit;
+  padding: 18px $unit 20px;
+  width: 100%;
+}
+
+.Btn--sm {
+  font-size: 14px;
+  padding: $unit $unit * 3 $unit + 2px;
+}
+
+.Btn--full {
+  width: 100%;
+}
+
+@media (max-width: $large-break-point) {
+  .Btn--lg {
+    font-size: 15px;
+    padding: 16px $unit;
+    width: 25 * $unit;
+  }
+
+  .Btn--md {
+    font-size: 15px;
+    padding: 16px $unit;
+  }
+}
+
+// 버튼 부속
+.Btn__video-icon {
+  margin-left: -3px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+}

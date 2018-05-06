@@ -1,0 +1,42 @@
+.TitleSec {
+  background: url("./asset/img/firework6.jpg");
+  background-color: $color-cool-gray50;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: block;
+  padding: $unit * 20 0;
+  color: $color-white;
+  font-weight: 300;
+  position: relative;
+}
+
+.TltleSec__titlebox {
+}
+
+.slidein {
+  animation-name: slidein;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.73, -0.04, 0, 0.9);
+}
+
+.TitleSec__subtitle {
+  display: inline-block;
+  border-top: 1px solid $color-white-opacity70;
+  border-bottom: 1px solid $color-white-opacity70;
+  padding: 4px 0;
+}
+
+@keyframes slidein {
+  0% {
+  opacity: 0;
+    padding-left: 40px;
+}
+
+  100% {
+    opacity: 1;
+    padding-left: 16px;
+  }
+}
