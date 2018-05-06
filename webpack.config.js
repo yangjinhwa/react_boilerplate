@@ -3,19 +3,37 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry:[
-    './1.js'
+    './index.jsx'
   ],
   output: {
   path: path.resolve(__dirname, 'build'),
-    filename: 'bundle2.js'
+    filename: 'bundle.js'
 },
+  mode: "development",
   module: {
     rules: [
-      {test: /\.scss$/,
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
         use: [
           'style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            }
+          }
         ]
       }
     ]
@@ -29,5 +47,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html'
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      component: path.resolve(__dirname,'component')
+    },
+    extensions: ['.js','.jsx']
+  }
 };
