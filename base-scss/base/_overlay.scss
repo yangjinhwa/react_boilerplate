@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: $z-index-overlay;
+  z-index: 1;
 
   // 실질적 오버레이는 after로 처리 부모는 컨테이너의 역할
   // 이유는 스크롤을 화면크기 이상으로 했을때 밀어내는 (띠용띠용)에서 뒷화면이 보이기때문에 fixed된 오버레이가 필요함

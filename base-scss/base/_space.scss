@@ -13,7 +13,7 @@ $max: 16;
 
 
 // 태블릿
-@media (max-width: $large-break-point) {
+@media (max-width: $tablet-break-point) {
   @for $i from 0 through $max {
     .space-#{$i}x {
       margin-bottom: $unit * $i;
@@ -23,7 +23,7 @@ $max: 16;
 
 
 // 모바일
-@media (max-width: $middle-break-point) {
+@media (max-width: $mobile-break-point) {
   @for $i from 0 through $max {
     .space-#{$i}x {
       margin-bottom: $unit * $i;
