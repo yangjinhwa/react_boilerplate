@@ -4,5 +4,6 @@ import Main from 'component/Main';
 
 ReactDOM.render (
   <Main />,
+
   document.getElementById('Root')
 );

@@ -1,5 +1,8 @@
 import React from 'react';
 import Sub from 'component/Sub';
+import SVG from 'react-svg-inline';
+import IconWheel from '../assets/icon/icon_wheel.svg';
+import '../scss/sub.scss';
 
 class Main extends React.Component {
   constructor(props) {
@@ -8,9 +11,14 @@ class Main extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className="dv">
         hello world!
         <Sub />
+        <SVG
+          className="icon_wheel"
+          // fill="red"
+          svg={IconWheel}
+        />
       </div>
     )
   }
